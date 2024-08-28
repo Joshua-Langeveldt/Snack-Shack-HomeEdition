@@ -6,10 +6,10 @@
         </div>
 
         <div class="promotions-item">
-            <div class="table-responsive">
+            <div class="table-responsive cust-tab">
                 <table class="table table-bordered text-center">
                     <thead>
-                        <tr class="bg-light-gray">
+                        <tr class="bg-warning">
                             <th class="text-uppercase">Time</th>
                             <th class="text-uppercase">Monday</th>
                             <th class="text-uppercase">Tuesday</th>
@@ -24,24 +24,24 @@
                         <tr>
                             <td class="align-middle">07:00 - 09:00</td>
                             <td>
-                                <span class="bg-brown activity-name">Breakfast time</span>
+                                <span class="bg-beige activity-name text-white">Breakfast</span>
                                 <div class="activity-time">Discount 10%</div>
                             </td>
                             <td>
-                                <span class="bg-brown activity-name">Breakfast time</span>
+                                <span class="bg-beige activity-name text-white">Breakfast</span>
                                 <div class="activity-time">Discount 10%</div>
                             </td>
 
                             <td>
-                                <span class="bg-brown activity-name">Breakfast time</span>
+                                <span class="bg-beige activity-name text-white">Breakfast</span>
                                 <div class="activity-time">Discount 10%</div>
                             </td>
                             <td>
-                                <span class="bg-brown activity-name">Breakfast time</span>
+                                <span class="bg-beige activity-name text-white">Breakfast</span>
                                 <div class="activity-time">Discount 10%</div>
                             </td>
                             <td>
-                                <span class="bg-brown activity-name">Breakfast time</span>
+                                <span class="bg-beige activity-name text-white">Breakfast</span>
                                 <div class="activity-time">Discount 10%</div>
                             </td>
                             <td class="bg-light-gray">
@@ -55,21 +55,21 @@
                         <tr>
                             <td class="align-middle">10:00 - 14:00</td>
                             <td>
-                                <span class="bg-beige activity-name">Happy Lunch</span>
+                                <span class="bg-green activity-name">Lunch</span>
                                 <div class="activity-time">Free Drink</div>
                             </td>
                             <td class="bg-light-gray">
 
                             </td>
                             <td>
-                                <span class="bg-beige activity-name">Happy Lunch</span>
+                                <span class="bg-green activity-name">Lunch</span>
                                 <div class="activity-time">Free Drink</div>
                             </td>
                             <td class="bg-light-gray">
 
                             </td>
                             <td>
-                                <span class="bg-beige activity-name">Happy Lunch</span>
+                                <span class="bg-green activity-name">Lunch</span>
                                 <div class="activity-time">Free Drink</div>
                             </td>
                             <td class="bg-light-gray">
@@ -86,14 +86,14 @@
 
                             </td>
                             <td>
-                                <span class="bg-earth activity-name">Afternoon Snack</span>
+                                <span class="bg-beige activity-name">Afternoon Snack</span>
                                 <div class="activity-time">Discount 20% Nachos & Dessert </div>
                             </td>
                             <td class="bg-light-gray">
 
                             </td>
                             <td>
-                                <span class="bg-earth activity-name">Afternoon Snack</span>
+                                <span class="bg-beige activity-name">Afternoon Snack</span>
                                 <div class="activity-time">Discount 20% Nachos & Dessert </div>
                             </td>
                             <td class="bg-light-gray">
@@ -122,15 +122,15 @@
 
                             </td>
                             <td>
-                                <span class="bg-green activity-name">Happy Dinner</span>
+                                <span class="bg-green activity-name">Dinner</span>
                                 <div class="activity-time">Discount 15%</div>
                             </td>
                             <td>
-                                <span class="bg-green activity-name">Happy Dinner</span>
+                                <span class="bg-green activity-name">Dinner</span>
                                 <div class="activity-time">Discount 15%</div>
                             </td>
                             <td>
-                                <span class="bg-green activity-name">Happy Dinner</span>
+                                <span class="bg-green activity-name">Dinner</span>
                                 <div class="activity-time">Discount 15%</div>
                             </td>
                         </tr>
@@ -141,7 +141,7 @@
 
         <div class="promotions-item">
             <div class="content-box">
-                <img src="../assets/images/dis-1.jpg" alt="">
+                <img src="../assets/images/dis-1.jpg" alt="promoImg">
             </div>
 
             <div class="description">
@@ -163,7 +163,7 @@
 
         <div class="promotions-item">
             <div class="content-box">
-                <img src="../assets/images/dis-2.png" alt="">
+                <img src="../assets/images/dis-2.png" alt="promoImg">
             </div>
 
             <div class="description">
@@ -185,7 +185,7 @@
 
         <div class="promotions-item">
             <div class="content-box">
-                <img src="../assets/images/dis-3.jpg" alt="">
+                <img src="../assets/images/dis-3.jpg" alt="promoImg">
             </div>
 
             <div class="description">
@@ -222,8 +222,27 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 .promotions {
     padding: 2rem 9%;
+}
+
+.promotions .heading span {
+
+      font-family: "Qwitcher Grypen", cursive;
+  font-weight: 900;
+  font-style: normal;
+    font-size: 7rem;
+    color: #ea0c0c;
+}
+
+.promotions .heading h3 {
+
+        font-size: 2.5rem;
+    padding-top: .5rem;
+    color: #27ae60;
+    font-weight: 800;
 }
 
 .promotions .promotions-item {
@@ -233,6 +252,10 @@ export default {
     display: flex;
 }
 
+.promotions .promotions-item .cust-tab{
+    box-shadow: 1rem 2rem 2rem grey;
+    margin-bottom: 8rem;
+}
 /* Table */
 .activity-name {
     padding: 5px 15px;
@@ -304,6 +327,9 @@ export default {
     border-radius: 1rem;
     height: 30rem;
     max-width: 25%;
+    margin-bottom: 4rem ;
+    box-shadow: 1rem 2rem 2rem grey;
+
 }
 
 .promotions .promotions-item .content-box img {
@@ -315,12 +341,15 @@ export default {
 .promotions .promotions-item .description {
     position: relative;
     margin-left: 50px;
+    font-size: 1rem;
 }
 
 .promotions .promotions-item .description h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    padding-top: .5rem;
     color: #27ae60;
+    font-weight: 400;
+    margin-bottom:20px;
 }
 
 .promotions .promotions-item .description ul {
@@ -329,16 +358,30 @@ export default {
 
 .promotions .promotions-item .description li {
     margin-bottom: 30px;
+
 }
 
 .promotions .promotions-item .description p {
-    font-size: 20px;
+    font-size: 1.8rem;
 }
 
 .promotions .promotions-item .description .btn {
     position: absolute;
     bottom: 0;
     left: 0;
+    margin-bottom: 4rem;
+    background-color: #ea0c0c;
+    transition: transform 0.4s ease-in-out;
+
+    
+
+}
+
+.promotions .promotions-item .description .btn:hover {
+
+    background-color: #27ae60;
+    transform: scale(0.9);
+
 
 }
 
