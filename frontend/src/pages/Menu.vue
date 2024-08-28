@@ -2,7 +2,7 @@
     <div class="menu-section">
         <div class="heading">
             <span>menu</span>
-            <h3>our special dishes</h3>
+            <h3>Snack Smart <br> Snack🍜Shack</h3>
         </div>
 
         <div class="row">
@@ -78,35 +78,35 @@
                         <li>
                             <input type="button" name="rPrice" id="rtfPrice" value="2,5" hidden
                                 @click="filterPriceBtn($event)" />
-                            <label for="rtfPrice" class="d-flex justify-content-between">$2 - $5 <button
+                            <label for="rtfPrice" class="d-flex justify-content-between">R2 - R5 <button
                                     class="unselect-btn" @click="unselectPriceBtn($event)">X</button></label>
                         </li>
 
                         <li>
                             <input type="button" name="rPrice" id="rftPrice" value="5,10" hidden
                                 @click="filterPriceBtn($event)" />
-                            <label for="rftPrice" class="d-flex justify-content-between">$5 - $10 <button
+                            <label for="rftPrice" class="d-flex justify-content-between">R5 - R10 <button
                                     class="unselect-btn" @click="unselectPriceBtn($event)">X</button></label>
                         </li>
 
                         <li>
                             <input type="button" name="rPrice" id="rttPrice" value="10,12" hidden
                                 @click="filterPriceBtn($event)" />
-                            <label for="rttPrice" class="d-flex justify-content-between">$10 - $12 <button
+                            <label for="rttPrice" class="d-flex justify-content-between">R10 - R12 <button
                                     class="unselect-btn" @click="unselectPriceBtn($event)">X</button></label>
                         </li>
 
                         <li>
                             <input type="button" name="rPrice" id="mtPrice" value="12" hidden
                                 @click="filterPriceBtn($event)" />
-                            <label for="mtPrice" class="d-flex justify-content-between">{{ ">" }} $12 <button
+                            <label for="mtPrice" class="d-flex justify-content-between">{{ ">" }} R12 <button
                                     class="unselect-btn" @click="unselectPriceBtn($event)">X</button></label>
                         </li>
 
                         <li>
                             <input type="button" name="rPrice" id="ltPrice" value="2" hidden
                                 @click="filterPriceBtn($event)" />
-                            <label for="ltPrice" class="d-flex justify-content-between">{{ "<" }} $2 <button
+                            <label for="ltPrice" class="d-flex justify-content-between">{{ "<" }} R2 <button
                                     class="unselect-btn" @click="unselectPriceBtn($event)">X</button></label>
                         </li>
 
@@ -472,6 +472,23 @@ export default {
 </script>
 
 <style scoped>
+
+.menu-section .heading span{
+          font-family: "Qwitcher Grypen", cursive;
+  font-weight: 900;
+  font-style: normal;
+    font-size: 7rem;
+    color: #ea0c0c;
+}
+
+.menu-section .heading h3{
+    font-size: 2.6rem;
+    padding-top: .5rem;
+    color: #27ae60;
+    font-weight: 400;
+}
+
+
 input[type="button"] {
     background: none;
     color: inherit;
@@ -491,7 +508,7 @@ input[type="button"] {
 }
 
 hr {
-    border-top: 3px solid #057835fa;
+    border-top: 3px solid #27ae60;
     width: 100%;
 }
 
@@ -514,6 +531,8 @@ hr {
 
 .filter-heading h1 {
     color: #27ae60;
+        font-weight:300;
+
 }
 
 .filter-option {
@@ -530,7 +549,7 @@ hr {
 
 .filter-option label:hover {
     color: white;
-    background-color: #f38609 !important;
+    background-color: #ea0c0c !important;
     transition: all 0.5s ease;
 }
 
@@ -548,6 +567,8 @@ hr {
     font-size: 20px;
     color: white;
     background: #27ae60;
+    border-radius: 1rem;
+
 }
 
 ::placeholder {
@@ -564,28 +585,30 @@ hr {
     max-width: 100%;
     text-align: center;
     background-color: #27ae60;
+    border-radius: 1rem;
 }
 
 .menu-section .menu-tabs .menu-tab-item {
     display: inline-block;
     cursor: pointer;
     padding: 5px 30px;
-    border-radius: 30%;
+    border-radius: 15%;
     font-size: 20px;
     color: whitesmoke;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: capitalize;
     transition: all 0.3s ease;
     margin: 0;
 }
 
 .menu-section .menu-tabs .menu-tab-item:hover {
-    background-color: #f38609 !important;
+    background-color: #ea0c0c !important;
 }
 
 .menu-section .menu-tabs .menu-tab-item p {
     padding: none;
     margin: none;
+    font-weight: 400;
 }
 
 .menu-section .box-container {
