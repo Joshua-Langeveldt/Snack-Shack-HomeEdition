@@ -4,7 +4,7 @@
 
         <div class="heading">
             <span>book a table</span>
-            <h3>enjoy your moment</h3>
+            <h3>Snack Smart <br> Snack🍜Shack</h3>
         </div>
 
         <div class="icons-container">
@@ -19,10 +19,6 @@
                 <h3>+84 123 123 123</h3>
             </div>
 
-            <div class="icons">
-                <img src="../assets/images/icon-3.png" alt="">
-                <h3>02 Duong Khue, Cau Giay, Ha Noi, Viet Nam</h3>
-            </div>
 
         </div>
 
@@ -82,7 +78,7 @@
                 </div>
             </div>
 
-            <input type="submit" value="Book Now" class="btn">
+            <input type="submit" value="Book Now" class="btn cust-butt">
         </form>
 
     </section>
@@ -271,6 +267,21 @@ export default {
     padding: 2rem 9%;
 }
 
+.order-section .heading span{
+    font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+  font-style: normal;
+    font-size: 7rem;
+    color: #ea0c0c;
+}
+
+.order-section .heading h3{
+     font-size: 2.6rem;
+    padding-top: .5rem;
+    color: #27ae60 !important;
+    font-weight: 400;
+}
+
 .order-section .icons-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -283,6 +294,8 @@ export default {
     padding: 2rem;
     text-align: center;
     background: #f7f7f7;
+        box-shadow: 1rem 2rem 2rem grey;
+
 }
 
 .order-section .icons-container .icons img {
@@ -291,7 +304,6 @@ export default {
 
 .order-section .icons-container .icons h3 {
     font-size: 2rem;
-    color: #130f40;
     margin-top: .5rem;
 }
 
@@ -308,6 +320,7 @@ export default {
 .order-section form .row .input-box {
     width: 49%;
     padding: 1.8rem 0;
+
 }
 
 .order-section form .row label {
@@ -333,11 +346,22 @@ export default {
     font-size: 1.6rem;
     text-transform: none;
     color: #130f40;
+     box-shadow: 1rem 2rem 2rem grey;
+
 }
 
 .order-section form .row textarea {
     height: 20rem;
     resize: none;
+}
+
+.cust-butt{
+    transition: transform 0.4s ease-in-out;
+}
+
+.cust-butt:hover{
+  background-color:#ea0c0c;
+  transform: scale(0.9);
 }
 
 .order-section form .row .map {
